@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Drawing Videos</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <div class="videoPlayer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0?si=0May9u0hn9DLgam_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay></iframe>
+                </div>
+                <div class="button-group">
+                    <button onclick="changePage1()">Deer</button>
+                    <button onclick="changePage2()"class="activePage">Bear</button>
+                    <button onclick="changePage3()">Bass</button>
+                </div>
+                <label for="color">Color:</label>
+                <input type="text" id="color" value="black" />
+                <label for="size">Size:</label>
+                <input type="text" id="size" value="10" />
+            
+                <button onclick="changePage4()" class="returnbutton">Return To Game Selection</button>
+            </select>
+
+            </aside>
+
+            <section id="canvas-holder"> 
+            </section>
+        </main>
+    
+    </body>
+</html>

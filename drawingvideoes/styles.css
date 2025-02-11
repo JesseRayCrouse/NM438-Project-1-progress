@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family:"Oswald", Helvetica, sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 600px auto;
+    height: 100vh;
+}
+
+aside {
+    padding: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background:url(../sourceimages/cardboardTexture.svg);
+    background-image: cover;
+}
+
+.videoPlayer {
+    padding-left: 10px;
+    padding-bottom: 50px;
+}
+
+.button-group {
+    padding-left: 40px;
+}
+
+.button-group button {
+    background-color: lightseagreen;
+    border-radius: 20%;
+    border: 5px solid darkcyan;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    align-content: center;
+    cursor: pointer;
+}
+
+ .returnbutton {
+    background-color: lightseagreen;
+    border-radius: 20%;
+    border: 5px solid darkcyan;
+    width: 250px;
+    height: 100px;
+    margin: 30px;
+    align-content: center;
+    cursor: pointer;
+}
+
+ .returnbutton:hover {
+    background-color: darkcyan;
+    border-radius: 20%;
+    border: 5px solid darkcyan;
+    color: white;
+    width: 250px;
+    height: 100px;
+    margin: 30px;
+    align-content: center;
+    cursor: pointer;  
+}
+
+.button-group button:hover, div .activePage {
+    background-color: darkcyan;
+    border-radius: 20%;
+    border: 5px solid darkcyan;
+    color: white;
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    align-content: center;
+    cursor: pointer;
+}
+label {
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+#canvas-holder {
+    height: 100vh;
+    overflow: hidden;
+}

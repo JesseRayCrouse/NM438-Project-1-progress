@@ -1,0 +1,786 @@
+@font-face {
+    font-family: tanyasmarkerfont;
+    src: url("dafont/TanyasMarkerFont.ttf");
+}
+
+@font-face {
+    font-family: thechildrow;
+    src: url("dafont/TheChildrowFont.otf");
+}
+
+@font-face {
+    font-family: funytimes;
+    src: url("dafont/TheFunyTimes.ttf");
+}
+
+@font-face {
+    font-family: funytimesoutline;
+    src: url("dafont/TheFunyTimesOutline.ttf");
+}
+
+@font-face {
+    font-family: funytimesshadow;
+    src: url("dafont/TheFunyTimesShadow.ttf");
+}
+
+body {
+    background-image: url(sourceimages/cardboardTexture.png);
+    background-size: auto;
+    font-family: 'Oswald';
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+header {
+    background:url("sourceimages/papertexture.png");
+    background-size: auto;
+    margin: 0px;
+    height: 150px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+a:any-link {
+    
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-position: cover;
+    border-radius: 10%;
+    padding: 10px;
+
+}
+
+.home-link {
+    background-image: none;
+    box-shadow: none;
+}
+
+.mammals {
+    background-color: #8c1829;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.mammals:hover{
+    background-color: #b51f36;
+    background-position: cover;
+    padding-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.amphibians {
+    background-color: #E7440D;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.amphibians:hover{
+    background-color: #f26536;
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.reptiles {
+    background-color: #F6AE28;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.reptiles:hover{
+    background-color: #f8c059;
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.fish {
+    background-color: #00B865;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fish:hover{
+    background-color: #00eb81;
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.critters {
+    background-color: #133a6c;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.critters:hover{
+    background-color: #1B5299;
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.games {
+    background-color: #9087C0;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.games:hover {
+    background-color: #aea8d1;
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton1 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #F6AE28;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}  
+
+.helpbutton2 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #8C1829;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}  
+
+.helpbutton3 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #E7440D;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}  
+
+.helpbutton4 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #00B865;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}  
+
+.helpbutton5 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #133a6c;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}  
+
+.helpbutton6 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #9087C0;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+
+.helpbutton1:hover {
+    background-color: #f8c059;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.helpbutton2:hover {
+    background-color: #b51f36;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton3:hover {
+    background-color: #f26536;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton4:hover {
+    background-color: #00eb81;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton5:hover {
+    background-color: #1B5299;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton6:hover {
+    background-color: #aea8d1;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#activePage1 {
+    background-color: #aea8d1;
+    background-position: cover;
+    border: 3px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#activePage2 {
+    background-color: #1B5299;
+    background-position: cover;
+    border: 3px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#activePage3 {
+    background-color: #b51f36;
+    background-position: cover;
+    border: 3px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#activePage4 {
+    background-color: #f26536;
+    background-position: cover;
+    border: 3px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#activePage5 {
+    background-color: #f8c059;
+    background-position: cover;
+    border: 3px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#activePage6 {
+    background-color: #00eb81;
+    background-position: cover;
+    border: 3px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.directory {
+    position: absolute;
+    display: flex;
+    align-content: space-evenly;
+    margin-right: 1vw;
+    margin-top: 20px;
+    margin-left: 5vw;
+    padding: 20px;
+    z-index: 2;
+}
+
+.directory a {
+    font-family: tanyasmarkerfont, 'Oswald';
+    margin-right: 50px;
+    min-width: 140px;
+    margin-top: -30px;
+    text-align: center;
+    align-content: center;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+}
+
+.logo {
+    height: 100px;
+    width: 200px;
+    padding-left: 50px;
+    padding-top: 0px;
+}
+
+.logo :hover{
+    background: url(sourceimages/workinglogohover.png);
+    height: 100px;
+    width: 200px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.pageName {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 20px;
+    text-align: center;
+    font-family: thechildrow;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    font-size: 48px;
+}
+
+.helpbutton1, .helpbutton2, .helpbutton3, .helpbutton4, .helpbutton5, .helpbutton6 {
+font-family: tanyasmarkerfont, 'Oswald';
+float: right;
+margin: 20px;
+min-width: 250px;
+padding: 100px;
+margin-right: 30px;
+text-align: center;
+}
+
+.second-background-1 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #9087C0;
+background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-2 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #8c1829;
+background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-3 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #E7440D;
+background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-4 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #F6AE28;
+background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-5 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #00B865;
+background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-6 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #1B5299;
+background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 100vh;
+    margin-left: 30px;
+}
+
+.column-1 {
+    display: grid;
+    grid-row: 1/ 2;
+    grid-column: 1/ 2;
+    background:url(sourceimages/Red_Crumpled.jpg);
+    background-size: cover;
+    margin: 70px;
+    margin-bottom: 100px;
+    max-width: 26vw;
+}
+
+.column-2 {
+    display: grid;
+    grid-row: 1/ 2;
+    grid-column: 2/ 3;
+    background:url(sourceimages/Blue_Crumpled.jpg);
+    background-size: cover;
+    margin: 70px;
+    margin-left: 32px;
+    margin-bottom: 100px;
+    max-width: 26vw;
+}
+
+.column-3 {
+    display: grid;
+    grid-row: 1/ 2;
+    grid-column: 3/ 4;
+    background:url(sourceimages/Yellow_Crumpled.jpg);
+    background-size: cover;
+    margin: 70px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    max-width: 26vw;
+}
+
+.metaphoricalButtons {
+display: grid;
+grid-template-columns: 45% 45%;
+grid-template-rows: 100%;
+column-gap: 70px;
+z-index: 1;
+}
+.metaphoricalButtons a:any-link{
+    background-color: #8C1829;
+    font-size: 50px;
+    font-family: tanyasmarkerfont, 'Oswald';
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    text-align: center;
+    color: #FFF;
+    padding: 100px;
+    margin-left: 120px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 2px -2px #000;
+}
+
+.metaphoricalButtons a:hover{
+    background-color: #ff1414;
+    color: #e7e7e7;
+}
+
+.createacreature {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.drawinglink {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.videoPlayer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.videoPlayer iframe {
+    min-width: 100%;
+    min-height: 90%;
+    padding-top: 100px;
+    width: 100vw;
+    height: auto;
+    
+    
+}
+
+.noVideo {
+    margin-top: 160px;
+    font-family: thechildrow;
+        text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+    padding-bottom: 100px;
+}
+
+.card {
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 900px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: -1deg;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.polaroidimage {
+    max-width: 500px;
+    rotate: 5deg;
+    z-index: -1;
+    padding-left: 210px;
+    padding-top: 10px;
+}
+
+.polaroidimage2 {
+    max-width: 500px;
+    rotate: -5deg;
+    z-index: -1;
+    margin-top: -1000px;
+    padding-left: 150px;
+    padding-bottom: 70px;
+    
+}
+
+.card-2 {
+    grid-column: 2/3;
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 900px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: 1deg;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-title {
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+p {
+    padding: 20px;
+    font-size: 72px;
+    text-align: center;
+    margin-top: 55%;
+}
+
+.pageIndicator {
+    font-family: thechildrow;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.pageIndicator2 {
+    margin-top: 0;
+    font-family: thechildrow;
+    font-size: 72px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.empty-space {
+    min-width: 100vw;
+    min-height: 300px;
+}
+
+.graphpaper {
+background: url(sourceimages/torngraphpaper.png);
+background-size:cover;
+min-width: 100vw;
+min-height: 700px;
+padding: 0;
+margin-top: -700px;
+z-index: -1;
+}
+
+footer {
+    min-height: 50px;
+    min-width: 100vw;
+    background-color: black;
+    margin-top: 100px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.weirdfooter {
+    margin-top: 280px;
+}
+
+.weirderfooter {
+    margin-top: 550px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .second-background-1, .second-background-2 , .second-background-3 , .second-background-4 , .second-background-5 , .second-background-6 {
+        width: 101vw;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 20% 55% 25%;
+        grid-template-rows: 100%;
+    background-image: url("https://transparenttextures.com/patterns/scribble-light.png");
+    box-shadow: -10px 1px 10px #000;
+    }
+    
+    .directory {
+    position: absolute;
+    display: flex;
+    align-content: space-evenly;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    z-index: 2;
+    max-width: 100vw;
+}
+
+.directory a {
+    margin-right: 35px;
+    min-width: 160px;
+    margin-top: -30px;
+    text-align: center;
+    align-content: center;
+}
+    
+.card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+}
+
+.card {
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 600px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: -1deg;
+    z-index: -1;
+}
+
+.card-2 {
+    grid-column: 2/3;
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 600px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: 1deg;
+    z-index: -1;
+}
+
+.card-title {
+    margin-left: 30px;
+    margin-top: 25px;
+    font-size: 48px;
+    font-family: thechildrow;
+}
+
+
+
+.polaroidimage {
+    max-width: 400px;
+    rotate: 5deg;
+    z-index: -1;
+    padding-left: 150px;
+    padding-top: 10px;
+}
+
+.polaroidimage2 {
+    max-width: 405px;
+    rotate: -5deg;
+    z-index: -1;
+    margin-top: -1200px;
+    padding-left: 200px;
+    padding-bottom: 70px;
+    
+}
+
+.pageIndicator{
+    margin-top: 55%;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+
+    .directory {
+        position: absolute;
+        display: flex;
+        align-content: space-between;
+        margin-right: 20px;
+        margin-top: 30px;
+        padding: 10px;
+        z-index: 2;
+        max-width: 100vw;
+    }
+    
+    .directory a {
+        margin-right: 90px;
+        min-width: 160px;
+        margin-top: -30px;
+        text-align: center;
+        align-content: center;
+        font-size: 32px;
+    }
+
+    .helpbutton1 {
+        padding: 30px;
+        margin-right: 30px;
+    }
+
+    .card {
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 750px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: -1deg;
+    z-index: -1;
+}
+
+.card-2 {
+    grid-column: 2/3;
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 750px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: 1deg;
+    z-index: -1;
+}
+
+.card-title {
+    margin-left: 50px;
+    margin-top: 35px;
+    font-size: 40px;
+}
+
+
+
+.polaroidimage {
+    max-width: 500px;
+    rotate: 5deg;
+    z-index: -1;
+    padding-left: 210px;
+    padding-top: 10px;
+}
+
+.polaroidimage2 {
+    max-width: 500px;
+    rotate: -5deg;
+    z-index: -1;
+    margin-top: -1000px;
+    padding-left: 150px;
+    padding-bottom: 70px;
+    
+}
+
+.pageIndicator{
+    margin-top: 55%;
+}
+
+}
+}
