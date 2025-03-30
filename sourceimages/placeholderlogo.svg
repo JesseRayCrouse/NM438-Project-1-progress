@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112.5" height="75" viewBox="0 0 150 100">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 48px;
+        text-anchor: middle;
+        font-family: Oswald;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <text id="WNC_s" data-name="WNC’s" class="cls-1" transform="translate(50.859 48.42) scale(0.562 0.691)">WNC’s</text>
+    <text id="CreatureCorner" class="cls-1" transform="translate(73.449 95.666) scale(0.487 1.472)">CreatureCorner</text>
+  </g>
+</svg>

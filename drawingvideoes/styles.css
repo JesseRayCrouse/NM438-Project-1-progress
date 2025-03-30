@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+
+@font-face {
+    font-family: tanyasmarkerfont;
+    src: url("../dafont/TanyasMarkerFont.ttf");
+}
+
+@font-face {
+    font-family: thechildrow;
+    src: url("../dafont/TheChildrowFont.otf");
+}
+
+@font-face {
+    font-family: funytimes;
+    src: url("../dafont/TheFunyTimes.ttf");
+}
+
+@font-face {
+    font-family: funytimesoutline;
+    src: url("../dafont/TheFunyTimesOutline.ttf");
+}
+
+@font-face {
+    font-family: funytimesshadow;
+    src: url("../dafont/TheFunyTimesShadow.ttf");
+}
+
+body {
+    margin: 0px;
+    font-family:"Oswald", Helvetica, sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: 600px auto;
+    height: 100vh;
+}
+
+aside {
+    padding: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background:url(../sourceimages/cardboardTexture.png);
+    background-image: cover;
+    border-right: 10px black solid;
+}
+
+.colorContainer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 33% 34% 33%;
+    background:url(../sourceimages/indexcardTexture.webp);
+    background-size: cover;
+    max-width: 100%;
+    padding-left: 0%;
+    margin-top: -20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.row1 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-left: 10%;
+}
+
+.row2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-left: 10%;
+}
+
+.row3 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-left: 10%;
+}
+.color {
+    padding: 10px;
+    margin: 10px;
+    min-width: 75px;
+}
+
+.colorContainer label {
+    font-size: 30px;
+    font-family: thechildrow;
+    color: black;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#colorIndicator {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 50px;
+    margin-right: -20px;
+    margin-bottom: 10px;
+    background-color: black; 
+    margin-top: 10px;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+
+#red {
+    background-color: red;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#orange {
+    background-color: orange;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#yellow {
+    background-color: yellow;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#green {
+    background-color: green;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#blue {
+    background-color: blue;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#purple {
+    background-color: purple;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#pink {
+    background-color: pink;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#black {
+    background-color: black;
+    color: white;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#brown {
+    background-color: brown;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#white {
+    background-color: white;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#lime {
+    background-color: lime;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#gray {
+    background-color: gray;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.videoPlayer {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    min-width: 90%
+}
+
+.videoPlayer video {
+    max-width: 560px;
+    max-height: 315px;
+    width: 100vw;
+}
+.button-group {
+    padding-left: 5.5vw;
+    padding-bottom: 0;
+}
+
+.button-group button {
+    background-color: lightseagreen;
+    border-radius: 20%;
+    font-family: tanyasmarkerfont;
+    color: white;
+    font-size: 24px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px .1px 0 #000;
+    border: 5px solid darkcyan;
+    width: 125px;
+    height: 75px;
+    margin: 10px;
+    margin-bottom: -10px;
+    align-content: center;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+ .returnbutton {
+    background-color: #8c1829;
+    border-radius: 10%;
+    border: 5px solid #8c1829;
+    font-family: tanyasmarkerfont;
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    width: 400px;
+    height: 100px;
+    margin: 30px;
+    margin-left: 6vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-content: center;
+    cursor: pointer;
+}
+
+ .returnbutton:hover {
+    background-color: #b51f36;
+    border-radius: 10%;
+    border: 5px solid #8c1829;
+    font-family: tanyasmarkerfont;
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px .1px 0 #000;
+    color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    width: 400px;
+    height: 100px;
+    margin: 30px;
+    margin-top: 0;
+    margin-left: 6vw;
+    margin-bottom: 0;
+    align-content: center;
+    cursor: pointer;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.row1 button:hover, .row2 button:hover, .row3 button:hover {
+    color: white;
+    border-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.button-group button:hover, div .activePage {
+    background-color: darkcyan;
+    border-radius: 20%;
+    font-family: tanyasmarkerfont;
+    color: black;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    border: 5px solid darkcyan;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    width: 125px;
+    height: 75px;
+    margin: 10px;
+    margin-bottom: 50px;
+    align-content: center;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+label {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+
+.sizeIdentifier {
+    font-size: 30px;
+    font-family: funytimes;
+    color: black;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+#sizeValue {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: tan;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+    background-color: #c28f58;
+    background-image: url("https://www.transparenttextures.com/patterns/retina-wood.png");
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 30px;
+    background-color: #583006;
+    background-image: url("https://www.transparenttextures.com/patterns/retina-wood.png");
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 30px;
+    scale: 110%;
+    background-color: #583006;
+    background-image: url("https://www.transparenttextures.com/patterns/retina-wood.png");
+    cursor: pointer;
+  }
+input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+#canvas-holder {
+    height: 100vh;
+    overflow: hidden;
+}

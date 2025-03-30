@@ -1,0 +1,1128 @@
+@font-face {
+    font-family: tanyasmarkerfont;
+    src: url("../dafont/TanyasMarkerFont.ttf");
+}
+
+@font-face {
+    font-family: thechildrow;
+    src: url("../dafont/TheChildrowFont.otf");
+}
+
+@font-face {
+    font-family: funytimes;
+    src: url("../dafont/TheFunyTimes.ttf");
+}
+
+@font-face {
+    font-family: funytimesoutline;
+    src: url("../dafont/TheFunyTimesOutline.ttf");
+}
+
+@font-face {
+    font-family: funytimesshadow;
+    src: url("../dafont/TheFunyTimesShadow.ttf");
+}
+
+@keyframes bounce-in-top {
+    0% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(-65px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(-28px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+  }
+
+body {
+    background-image: url(../sourceimages/cardboardTexture.png);
+    background-size: 100vw 100vh;
+    font-family: 'Oswald';
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.creaturebody {
+    background-size: auto;
+    font-family: 'Oswald';
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 52% 48%;
+    grid-template-rows: 100%;
+    margin: 0;
+}
+
+.second-background-2 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50% 50%;
+background-color: #8c1829;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-4 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50% 50%;
+background-color: #F6AE28;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-5 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50% 50%;
+background-color: #00B865;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-6 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50% 50%;
+background-color: #1B5299;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.staticPage {
+    overflow: hidden;
+}
+aside {
+    padding: 10px;
+    width: 665px;
+    height: 200vh;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background:url(../sourceimages/cardboardTexture.png);
+    background-image: 100% 100%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+    z-index: 5;
+}
+
+
+.PartContainer {
+    overflow-y: scroll;
+    width: 665px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20% 20%;
+    margin: 0;
+}
+
+ .earheader {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: thechildrow;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 140px;
+    margin-left: 50%;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+}
+
+.eyeheader {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: thechildrow;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 50%;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+}
+
+.mouthsheader {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: thechildrow;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 0px;
+    margin-left: 50%;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+}
+
+.bodyheader {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: thechildrow;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 125px;
+    margin-left: 50%;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+}
+
+.armsheader {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: thechildrow;
+    font-size: 32px;
+    margin: 0;
+    margin-top: -60px;
+    margin-left: 50%;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+}
+
+.legsheader {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: thechildrow;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 50%;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+}
+
+.tailsheader {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: thechildrow;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 50%;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+}
+.bodys1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 5% 95%;
+    column-gap: 1%;
+    grid-template-rows: 100%;
+    height: 100px;
+    width: 600px;
+    padding-top: 100px;
+    margin-top: -50px;
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.ears1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 5% 95%;
+    column-gap: 1%;
+    grid-template-rows: 100%;
+    height: 100px;
+    width: 600px;
+    padding-top: 100px;
+    margin-top: -50px;
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.button1 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.button2 {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.button3 {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.bodys1 button {
+    color: white;
+    justify-items: center;
+    align-items: center;  
+    background-color: #133a6c;
+    border-radius: 10%;
+    width: 100px;
+    height: 70px;
+    margin-top: 100px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.bodys1 button:hover {
+    background-color:#1B5299;
+}
+
+.ears1 button {
+    color: white;
+    justify-items: center;
+    align-items: center;  
+    background-color: #133a6c;
+    border-radius: 10%;
+    width: 100px;
+    height: 70px;
+    margin-top: 100px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.ears1 button:hover {
+    background-color:#1B5299;
+}
+
+.eyes1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 5% 95%;
+    column-gap: 1%;
+    grid-template-rows: 100%;
+    height: 100px;
+    width: 600px;
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin-top: 150px;
+}
+
+.eyes1 button {
+    color: white;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #133a6c;
+    border-radius: 10%;
+    width: 100px;
+    height: 70px;
+    margin-top: 0px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.eyes1 button:hover {
+    background-color:#1B5299;
+}
+
+.mouths1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 1%;
+    grid-template-rows: 5% 95%;
+    height: 100px;
+    width: 600px;
+    margin-top: 110px;
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    margin-top: 190px;
+}
+
+.mouths1 button {
+    color: white;
+    justify-items: center;
+    align-items: center;
+    background-color: #133a6c;
+    border-radius: 10%;
+    width: 100px;
+    height: 70px;
+    margin-top: 50px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.mouths1 button:hover {
+    background-color:#1B5299;
+}
+
+.arms1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 1%;
+    grid-template-rows: 5% 95%;
+    height: 100px;
+    width: 600px;
+    display: grid;
+    padding-top: 100px;
+    margin-top: 270px;
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+.arms1 button {
+    color: white;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #133a6c;
+    border-radius: 10%;
+    width: 100px;
+    height: 70px;
+    margin-left: 50px;
+    margin-top: -10px;
+    z-index: 2;
+}
+
+.arms1 button:hover { 
+    background-color:#1B5299;
+}
+
+.legs1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 1%;
+    grid-template-rows: 5% 95%;
+    height: 100px;
+    padding-top: 150px;
+    margin-top: 100px;
+    width: 600px;
+    display: grid;
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+
+.legs1 button {
+    color: white;
+    align-items: center;   
+    justify-items: center;
+    background-color: #133a6c;
+    border-radius: 10%;
+    width: 100px;
+    height: 70px;
+    margin-top: 100px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.legs1 button:hover {
+    background-color:#1B5299;
+}
+
+.tails1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 1%;
+    grid-template-rows: 5% 95%;
+    height: 100px;
+    width: 600px;
+    padding-top: 150px;
+    margin-top: 100px;
+    display: grid;
+    grid-row: 7/8;
+    grid-column: 1/2;
+}
+
+.tails1 button {
+    color: white;
+    justify-items: center;
+    align-items: center;
+    background-color: #133a6c;
+    border-radius: 10%;
+    width: 100px;
+    height: 70px;
+    margin-top: 100px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.tails1 button:hover {
+    background-color:#1B5299;
+}
+
+.emptyspace {
+    min-height: 300px;
+}
+
+.imageContainer {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 300px;
+    height: 300px;
+    background: url(../sourceimages/Yellow_Crumpled.png);
+    background-size: cover;
+}
+
+.creatureHolder {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../sourceimages/Ivory_Crumpled.png);
+    background-repeat: none;
+    background-size: 120% 100%;
+    margin-left: -150px;
+}
+
+.creaturebase {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 80vw;
+    margin-left: -100px;
+    margin-top: -350px;
+    z-index: 3;
+}
+
+#overlayImageBody {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 80vw;
+    margin-left: -100px;
+    margin-top: -350px;
+    z-index: 3;
+}
+
+#overlayImageBody2 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 80vw;
+    margin-left: -100px;
+    margin-top: -350px;
+    z-index: 3;
+}
+
+#overlayImageBody3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 80vw;
+    margin-left: -100px;
+    margin-top: -350px;
+    z-index: 3;
+}
+#overlayImageEye {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 70vw;
+    margin-left: -49px;
+    margin-top: -305px;
+    z-index: 5;
+}
+
+#overlayImageEye2 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 70vw;
+    margin-left: -49px;
+    margin-top: -305px;
+    z-index: 4;
+}
+
+#overlayImageEye3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 70vw;
+    margin-left: -45px;
+    margin-top: -305px;
+    z-index: 4;
+}
+#overlayImageEar {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 70vw;
+    margin-left: -49px;
+    margin-top: -302px;
+    z-index: 6;
+}
+
+#overlayImageEar2 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 50vw;
+    margin-left: 68px;
+    margin-top: -200px;
+    z-index: 3;
+}
+
+#overlayImageEar3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 50vw;
+    margin-left: 78px;
+    margin-top: -200px;
+    z-index: 3;
+}
+
+#overlayImageMouth {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 60vw;
+    margin-left: 9px;
+    margin-top: -271px;
+    z-index: 6;
+}
+
+#overlayImageMouth2 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 50vw;
+    margin-left: 61px;
+    margin-top: -230px;
+    z-index: 6;
+}
+
+#overlayImageMouth3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 50vw;
+    margin-left: 61px;
+    margin-top: -230px;
+    z-index: 6;
+}
+
+#overlayImageArm {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 70vw;
+    margin-left: -40px;
+    margin-top: -295px;
+    z-index: 4;
+}
+
+#overlayImageArm2 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 60vw;
+    margin-left: 39px;
+    margin-top: -220px;
+    z-index: 4;
+}
+
+#overlayImageArm3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 60vw;
+    margin-left: 39px;
+    margin-top: -220px;
+    z-index: 4;
+}
+
+#overlayImageLeg {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 70vw;
+    margin-left: -15px;
+    margin-top: -292px;
+    z-index: 4;
+}
+
+#overlayImageLeg2 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 60vw;
+    margin-left: 70px;
+    margin-top: -226px;
+    z-index: 4;
+}
+
+#overlayImageLeg3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 60vw;
+    margin-left: 70px;
+    margin-top: -226px;
+    z-index: 4;
+}
+
+#overlayImageTail {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 70vw;
+    margin-left: -10px;
+    margin-top: -295px;
+    z-index: 2;
+}
+
+#overlayImageTail2 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 60vw;
+    margin-left: 68px;
+    margin-top: -260px;
+    z-index: 2;
+}
+
+#overlayImageTail3 {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 60vw;
+    margin-left: 68px;
+    margin-top: -260px;
+    z-index: 2;
+}
+.sample-image {
+    z-index: 4;
+    width: 100px;
+}
+
+.pedestal {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin: 0;
+    z-index: 2;
+    width: 70vw;
+    margin-top: -350px;
+    margin-left: -50px;
+}
+header {
+    background:url("../sourceimages/papertexture.png");
+    background-size: auto;
+    margin: 0px;
+    height: 150px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 6;
+}
+
+.smallheader {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: thechildrow;
+    text-align: center;
+    animation: bounce-in-top 1.1s both;
+    font-size: 24px;
+    margin-bottom: 0;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+}
+
+.bigheader {
+    -webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    grid-row: 2/3;
+    font-family: funytimes;
+    min-width: 100vw;
+    text-align: center;
+    animation: bounce-in-top 1.1s 1.1s both;
+    font-size: 72px;
+    margin-top: 0;
+    color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px .1px 0 #000;
+}
+
+.bigheader2 {
+    -webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    grid-row: 2/3;
+    font-family: funytimes;
+    min-width: 100vw;
+    text-align: left;
+    margin-left: 25%;
+    animation: bounce-in-top 1.1s 1.1s both;
+    font-size: 72px;
+    margin-top: -30px;
+    color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px .1px 0 #000;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+    grid-template-rows: 50% 50%;
+    padding-bottom: 4%;
+}
+
+.creature-container {
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+    grid-template-rows: 100%;
+}
+
+.smallcreatureimage {
+min-height: 100px;
+margin-left: 30%;
+margin-top: 9%
+}
+
+.mediumcreatureimage {
+    min-height: 300px;
+    margin-left: 20%;
+    margin-top: 0%;
+    
+}
+
+.largecreatureimage {
+        min-height: 400px;
+        margin-left: 10%;
+        margin-top: -30%;
+    }
+.smallcreature {
+    font-family: tanyasmarkerfont, 'Oswald';
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+    background-image: url(../buttons/amphibians_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+    margin-left: 10vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.mediumcreature {
+    font-family: tanyasmarkerfont, 'Oswald';
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+    background-image: url(../buttons/mammals_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+    margin-left: 10vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.largecreature {
+    font-family: tanyasmarkerfont, 'Oswald';
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+    background-image: url(../buttons/mammals_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+    margin-left: 10vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+.smallcreature:hover {
+    font-family: tanyasmarkerfont, 'Oswald';
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px .1px 0 #000;
+    color: white;
+    background-image: url(../buttons/amphibians_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+    margin-top: 0;
+    margin-left: 10vw;
+    margin-bottom: 0;
+    align-content: center;
+    cursor: pointer;  
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.mediumcreature:hover {
+
+    font-family: tanyasmarkerfont, 'Oswald';
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px .1px 0 #000;
+    color: white;
+    background-image: url(../buttons/mammals_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+    margin-top: 0;
+    margin-left: 10vw;
+    margin-bottom: 0;
+    align-content: center;
+    cursor: pointer;  
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.largecreature:hover {
+    font-family: tanyasmarkerfont, 'Oswald';
+    font-size: 32px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px .1px 0 #000;
+    color: white;
+    background-image: url(../buttons/mammals_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    width: 300px;
+    height: 100px;
+    margin: 30px;
+    margin-top: 0;
+    margin-left: 6vw;
+    margin-bottom: 0;
+    align-content: center;
+    cursor: pointer;  
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+.returnbutton {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(../buttons/returntogames_button.png);
+    background-size: 100% 100%;
+    width: 400px;
+    height: 100px;
+    margin: 40px;
+    margin-left: 6.5vw;
+    margin-top: 0px;
+    align-content: center;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.returnbutton:hover {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(../buttons/returntogames_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    width: 400px;
+    height: 100px;
+    margin: 40px;
+    margin-left: 6.5vw;
+    margin-top: 0px;
+    align-content: center;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.returnbutton2 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background: transparent;
+    border: none;
+    background-image: url(../buttons/returntocreatureselection.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    width: 400px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: -140px;
+    align-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+
+footer {
+    min-height: 50px;
+    min-width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 80% 20%;
+    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 6;
+}
+
+.owenMain {
+    cursor: pointer;
+ max-height: 190px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    margin-left: 20px;
+      position: fixed;
+      bottom: 0;
+      z-index: 7;
+}
+.owenMain {
+    cursor: pointer;
+ max-height: 190px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    margin-left: 20px;
+      position: fixed;
+      bottom: 0;
+}
+
+#message {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 40px;
+    font-family: thechildrow, sans-serif;
+    color: #FFF;
+    text-align: center;
+    margin-left: 200px;
+    padding: 0;
+    
+}
+
+#toggleButton {
+    background-color: black;
+    border: none;
+}
+.toggleIcon{
+    cursor: pointer;
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border: none;
+    background:none;
+    width: 50px;
+    height: 50px;
+    margin-left: 200px;
+
+}
+
+.returnbutton2:hover {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background: transparent;
+    background-image: url(../buttons/returntocreatureselection_shaded.png);
+    background-size: 100% 100%;
+    width: 400px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: -140px;
+    align-content: center;
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.returnbutton3 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color: #8c1829;
+    border-radius: 10%;
+    border: 5px solid #8c1829;
+    font-family: tanyasmarkerfont, 'Oswald';
+    font-size: 24px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px .1px 0 #FFF;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    width: 400px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: -140px;
+    align-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.returnbutton3:hover {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color: #b51f36;
+    border-radius: 10%;
+    border: 5px solid #8c1829;
+    font-family: tanyasmarkerfont, 'Oswald';
+    font-size: 24px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px .1px 0 #000;
+    color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    width: 400px;
+    height: 70px;
+    align-content: center;
+    cursor: pointer;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.graphpaper {
+    background: url(../sourceimages/torngraphpaper.png);
+    background-size:cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin-top: -670px;
+    padding: 0;
+    z-index: 1;
+    }
+
+    footer {
+        max-height: 50px;
+        min-width: 100vw;
+        background-color: black;
+        margin-top: 100px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 6;
+    }
+
+

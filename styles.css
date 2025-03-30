@@ -1,0 +1,1692 @@
+@font-face {
+    font-family: tanyasmarkerfont;
+    src: url("dafont/TanyasMarkerFont.ttf");
+}
+
+@font-face {
+    font-family: thechildrow;
+    src: url("dafont/TheChildrowFont.otf");
+}
+
+@font-face {
+    font-family: funytimes;
+    src: url("dafont/TheFunyTimes.ttf");
+}
+
+@font-face {
+    font-family: funytimesoutline;
+    src: url("dafont/TheFunyTimesOutline.ttf");
+}
+
+@font-face {
+    font-family: funytimesshadow;
+    src: url("dafont/TheFunyTimesShadow.ttf");
+}
+
+@keyframes wiggle1 {
+    0%, 7% {transform: rotateZ(0);}
+    15% {transform: rotateZ(-13deg);}
+    20% {transform: rotateZ(9deg);}
+    25% {transform: rotateZ(-10deg);}
+    30% {transform: rotateZ(7deg);}
+    35% {transform: rotateZ(-2deg);}
+    40%, 100% {transform: rotateZ(0);}
+  }
+
+body {
+    background-image: url(sourceimages/cardboardTexture.png);
+    background-size: 100vw 100vh;
+    font-family: 'Oswald';
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+.staticPage {
+    overflow: hidden;
+}
+
+header {
+    background:url("sourceimages/papertexture.png");
+    background-size: auto;
+    margin: 0px;
+    height: 150px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 6;
+}
+a:any-link {
+    
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-position: cover;
+    border-radius: 10%;
+    padding: 10px;
+
+}
+
+.home-link {
+    display: grid;
+    grid-column: 1/2;
+    grid-template-rows: 1/2;
+    background-image: none;
+    box-shadow: none;
+    height: 50px;
+    width: 450px;
+    padding-left: 50px;
+    padding-top: 0px;
+    z-index: 7;
+}
+
+.mammals {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(buttons/mammals_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+ .mammals:hover, #activePage1{
+    background-image: url(buttons/mammals_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+    
+} 
+
+.amphibians {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(buttons/amphibians_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.amphibians:hover, #activePage2{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(buttons/amphibians_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.reptiles {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(buttons/reptiles_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.reptiles:hover, #activePage3{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(buttons/reptiles_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.fish {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(buttons/fish_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.fish:hover, #activePage4{
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-image: url(buttons/fish_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.critters {
+    display: grid;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-image: url(buttons/critters_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.critters:hover, #activePage5{
+        display: grid;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-image: url(buttons/critters_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+.games {
+    display: grid;
+    grid-column: 6/7;
+    grid-row: 1/2;
+    background-image: url(buttons/games_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.games:hover , #activePage6{
+       display: grid;
+    grid-column: 6/7;
+    grid-row: 1/2;
+    background-image: url(buttons/games_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.helpbutton1 {
+    background-image: url(buttons/howtohelp_button.png);
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    background-repeat: none;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}  
+
+.helpbutton2 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #8C1829;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}  
+
+.helpbutton3 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #E7440D;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}  
+
+.helpbutton4 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #00B865;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}  
+
+.helpbutton5 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #133a6c;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}  
+
+.helpbutton6 {
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-color: #9087C0;
+    background-position: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+
+.helpbutton1:hover , #activePage7{
+    background-image:url(buttons/howtohelp_shaded.png);
+    background-size: 90% 90%;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.helpbutton2:hover {
+    background-color: #b51f36;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton3:hover {
+    background-color: #f26536;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton4:hover {
+    background-color: #00eb81;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton5:hover {
+    background-color: #1B5299;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.helpbutton6:hover {
+    background-color: #aea8d1;
+    background-image: url("https://www.transparenttextures.com/patterns/stitched-wool.png");
+    background-position: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+.directory {
+    min-height: 100px;
+    min-width: 100vw;
+    margin-left: 9%;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    column-gap: 10px;
+}
+
+
+.logo {
+    background-image: url(sourceimages/workinglogo.png);
+    background-repeat: none;
+    background-size: 100%;
+    height: 100px;
+    width: 450px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    padding-left: 50px;
+    padding-top: 0px;
+}
+
+.logo:hover{
+    background-image: url(sourceimages/workinglogohover.png);
+    background-repeat: none;
+    background-size: 100%;
+    height: 100px;
+    width: 450px;
+    padding-left: 50px;
+    padding-top: 0px;
+}
+
+.logo2 {
+    min-height: 200px;
+    width: 750px;
+    padding-left: 20vw;
+    padding-top: 0px;
+}
+
+.logo :hover{
+    background: url(sourceimages/workinglogohover.png);
+    height: 100px;
+    width: 200px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.pageName {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 20px;
+    text-align: center;
+    font-family: thechildrow;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    font-size: 48px;
+}
+
+.helpbutton1 {
+float: right;
+margin: 10px;
+margin-top: 20px;
+min-width: 260px;
+min-height: 40px;
+padding: 100px;
+margin-right: 50px;
+}
+
+.second-background-1 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #9087C0;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-2 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #8c1829;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-3 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #E7440D;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-4 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #F6AE28;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-5 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #00B865;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.second-background-6 {
+    width: 100vw;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+background-color: #1B5299;
+background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+box-shadow: -10px 1px 10px #000;
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 100vh;
+    margin-left: 30px;
+}
+
+.sticker {
+    max-height: 100px;
+    max-width: 100px;
+    padding: 0;
+    margin-bottom: -23%;
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-right: -30px;
+    rotate: -50deg;
+    z-index: 5;
+}
+
+.sticker2 {
+    max-height: 150px;
+    max-width: 150px;
+    padding: 0;
+    margin-bottom: -22%;
+    margin-left: -1%;
+    margin-top: 100px;
+    rotate: 230deg;
+    z-index: 4;
+}
+
+.sticker3 {
+    max-height: 200px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -25%;
+    margin-left: -5%;
+    margin-top: 100px;
+    rotate: -40deg;
+    z-index: 4;
+}
+
+.sticker4 {
+    max-height: 200px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -25%;
+    margin-left: 35%;
+    margin-top: 100px;
+    rotate: 50deg;
+    z-index: 4;
+}
+
+.sticker5 {
+    max-height: 150px;
+    max-width: 150px;
+    padding: 0;
+    margin-bottom: -21%;
+    margin-left: 76%;
+    margin-top: 100px;
+    rotate: -50deg;
+    z-index: 4;
+}
+
+.sticker6 {
+    max-height: 100px;
+    max-width: 100px;
+    padding: 0;
+    margin-bottom: -20%;
+    margin-left: 84%;
+    margin-top: 100px;
+    rotate: 50deg;
+    z-index: 5;
+}
+
+.sticker7 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: -200px;
+    margin-top: 300px;
+    padding: 0;
+    rotate: 50deg;
+    z-index: 5;
+}
+
+.sticker8 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: -200px;
+    margin-top: 180px;
+    padding: 0;
+    rotate: 50deg;
+    z-index: 5;
+}
+
+.sticker9 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 200px;
+    max-width: 200px;
+    padding: 0;
+    margin-left: -50px;
+    rotate: 50deg;
+    z-index: 5;
+}
+
+.sticker10 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: 205%;
+    padding: 0;
+    rotate: -50deg;
+    z-index: 5;
+}
+
+.sticker11 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: 180px;
+    margin-left: 240%;
+    padding: 0;
+    rotate: -230deg;
+    z-index: 5;
+}
+
+.sticker12 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: 250%;
+    margin-top: 300px;
+    padding: 0;
+    rotate: -50deg;
+    z-index: 5;
+}
+
+.mammalsticker {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -25%;
+    margin-left: 4%;
+    margin-top: 200px;
+    z-index: 4;
+}
+
+
+.mammalsticker2 {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -24%;
+    margin-left: 64%;
+    z-index: 4;
+}
+
+.mammalsticker3 {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -25%;
+    margin-left: 1%;
+    margin-top: 200px;
+    z-index: 4;
+}
+
+.mammalsticker4 {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -24%;
+    margin-left: 70%;
+    z-index: 4;
+}
+
+.amphibiansticker {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -25%;
+    margin-left: 4%;
+    margin-top: 200px;
+    z-index: 4;
+}
+
+
+.amphibiansticker2 {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -24%;
+    margin-left: 64%;
+    z-index: 4;
+}
+
+.fishsticker {
+    max-height: 300px;
+    max-width: 250px;
+    padding: 0;
+    margin-bottom: -24%;
+    margin-left: 4%;
+    margin-top: 200px;
+    z-index: 4;
+}
+
+
+.fishsticker2 {
+    max-height: 300px;
+    max-width: 250px;
+    padding: 0;
+    margin-bottom: -22.5%;
+    margin-left: 78%;
+    z-index: 4;
+}
+
+.crittersticker {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -26%;
+    margin-left: 4%;
+    margin-top: 200px;
+    z-index: 4;
+}
+
+.crittersticker2 {
+    max-height: 300px;
+    max-width: 200px;
+    padding: 0;
+    margin-bottom: -26%;
+    margin-left: 64%;
+    z-index: 4;
+}
+
+.mammalsticker:hover, .mammalsticker2:hover, .mammalsticker3:hover, .mammalsticker4:hover {
+    animation: wiggle1 1.5s ease-in ;
+}
+.amphibiansticker:hover, .amphibiansticker2:hover {
+    animation: wiggle1 1.5s ease-in ;
+}
+.fishsticker:hover, .fishsticker2:hover {
+    animation: wiggle1 1.5s ease-in ;
+}
+.crittersticker:hover, .crittersticker2:hover {
+    animation: wiggle1 1.5s ease-in ;
+}
+.pageIndicator1{
+    font-size: 100px;
+    z-index: 6;
+    margin-top: 12%;
+    font-family: thechildrow;
+    text-shadow: -3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF;
+}
+
+#name {
+    font-size: 120px;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-top: -5%;
+    font-family: thechildrow;
+    text-shadow: -3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF;
+}
+
+.collage {
+    margin-top: -10%;
+    min-width: 100vw;
+    max-height: 800px;
+}
+.column-1 {
+    display: grid;
+    grid-row: 1/ 2;
+    grid-column: 1/ 2;
+    background:url(sourceimages/Red_Crumpled.png);
+    background-size: cover;
+    margin: 70px;
+    margin-bottom: 100px;
+    max-width: 26vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.column-2 {
+    display: grid;
+    grid-row: 1/ 2;
+    grid-column: 2/ 3;
+    background:url(sourceimages/Blue_Crumpled.png);
+    background-size: cover;
+    margin: 70px;
+    margin-left: 32px;
+    margin-bottom: 100px;
+    max-width: 26vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.column-3 {
+    display: grid;
+    grid-row: 1/ 2;
+    grid-column: 3/ 4;
+    background:url(sourceimages/Yellow_Crumpled.png);
+    background-size: cover;
+    margin: 70px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    max-width: 26vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.column-1 h1, .column-2 h1, .column-3 h1 {
+    background: url(sourceimages/clayTexture.png);
+    background-size: 100% 100%;
+    border-radius: 3%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-family: thechildrow;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 10px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.column-2  h1{
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.column-3  h1{
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+}
+
+.column-1 p, .column-2 p, .column-3 p {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 3%;
+    font-family: thechildrow;
+    font-size: 24px;
+    background: url(sourceimages/clayTexture.png);
+    background-size: 100% 50%;
+    text-align: left;
+}
+
+.metaphoricalButtons {
+display: grid;
+grid-template-columns: 45% 45%;
+grid-template-rows: 100%;
+column-gap: 70px;
+z-index: 1;
+transition: all 0.3s ease-in-out;
+}
+
+.metaphoricalButtons a:any-link{
+    min-height: 200px;
+    padding: 100px;
+    margin-top: -50px;
+    margin-left: 120px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+.metaphoricalButtons :hover {
+    transform: scale(1.1);
+}
+.createacreature {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background: url(buttons/create-a-creature_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.createacreature a:hover{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background: url(buttons/create-a-creature_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    filter: drop-shadow(0 0 0.35rem black);
+    transform: scale(1.1);
+}
+
+.drawinglink {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background: url(buttons/creaturedrawalongs_button.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    filter: drop-shadow(0 0 0.25rem black);
+    transition: all 0.3s ease-in-out;
+}
+
+.drawinglink a:hover{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background: url(buttons/creaturedrawalongs_button_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    filter: drop-shadow(0 0 0.35rem black);
+}
+
+.videoTitle {
+    font-family: thechildrow;
+    font-size: 72px;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+    text-align: center;
+}
+.videoPlayer{
+    position: absolute;
+    margin: 0;
+    z-index: 5;
+    padding-left: 24%;
+    margin-top: -455px;
+    z-index: 3;
+}
+
+.videoBorderimg {
+    position: absolute;
+    min-height: 640px;
+    min-width: 90%;
+    z-index: 2;
+    padding-left: 6%;
+}
+
+.videoPlayer iframe{
+    max-height: 91%;
+    padding-top: 575px;
+    width: 51.75vw;
+    height: 56vh;
+    z-index: 1;
+}
+
+.noVideo {
+    margin-top: 160px;
+    font-family: thechildrow;
+        text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+
+
+.meetTheTeamButton {
+    display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    background-image: url(buttons/meettheteam.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    max-width: 40%;
+    min-height: 100px;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 800px;
+    padding-bottom: 300px;
+    margin-bottom: 100px;
+    font-family: thechildrow;
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+.meetTheTeamButton:hover{
+    background-image: url(buttons/meettheteam_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.35rem black);
+}
+
+.moreInfoBanner {
+    min-width: 50%;
+    margin-top: -800px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+}
+
+.moreInfoButton {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(buttons/additionalresources.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    max-width: 40%;
+    min-height: 150px;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: -520px;
+    font-family: thechildrow;
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+.moreInfoButton:hover{
+    background-image: url(buttons/additonalresources_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.35rem black);
+}
+
+.moreInfoBanner2 {
+    min-width: 50%;
+    margin-top: -900px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+}
+
+.moreInfoButton2 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(buttons/additionalresources.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    max-width: 40%;
+    min-height: 150px;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: -540px;
+    font-family: thechildrow;
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+.moreInfoButton2:hover{
+    background-image: url(buttons/additonalresources_shaded.png);
+    background-size: 100% 100%;
+    background-repeat: none;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.35rem black);
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+    padding-bottom: 100px;
+}
+
+.card-container2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+    padding-bottom: 200px;
+    padding-left: 20vw;
+}
+.card {
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 900px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: -1deg;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card p, .card-2 p, .card-3 p {
+    font-size: 23px;
+    margin: 0;
+    text-align: left;
+    kerning: .5px;
+    margin-top: -50px;
+    font-family: thechildrow;
+}
+
+.organizationinfo p {
+    font-size: 32px;
+}
+.fun-fact {
+    margin-top: 5px;
+    font-size: 23px;
+    text-align: left;
+    margin: 0;
+    padding-left: 21px;
+    font-family: thechildrow;
+}
+
+.polaroidimage {
+    max-width: 500px;
+    rotate: 5deg;
+    z-index: -1;
+    padding-left: 210px;
+    padding-top: 10px;
+}
+
+.polaroidimage2 {
+    max-width: 405px;
+    rotate: -5deg;
+    z-index: -1;
+    margin-top: -1000px;
+    padding-left: 150px;
+    padding-bottom: 70px;
+    
+}
+
+.polaroidimage2alt {
+    max-width: 405px;
+    rotate: 5deg;
+    z-index: -1;
+    margin-top: -1000px;
+    padding-left: 150px;
+    padding-bottom: 70px;
+    
+}
+
+.polaroidimage2alt2 {
+    max-width: 405px;
+    rotate: 0deg;
+    z-index: -1;
+    margin-top: -1000px;
+    padding-left: 150px;
+    padding-bottom: 70px;
+    
+}
+
+.polaroidimage3 {
+    max-width: 405px;
+    z-index: -1;
+    margin-top: -900px;
+    padding-left: 200px;
+    padding-bottom: 70px;
+    
+}
+
+.card-2 {
+    grid-column: 2/3;
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 900px;
+    margin-left: -100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: 1deg;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 750px;
+    margin-right: -220px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: -1deg;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-title {
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.card-title2 {
+    margin-left: 50px;
+    margin-top: 35px;
+    font-size: 42px;
+    font-family: thechildrow;
+}
+p {
+    padding: 20px;
+    font-size: 72px;
+    text-align: center;
+    margin-top: 55%;
+}
+
+.pageIndicator {
+    z-index: 6;
+    font-family: thechildrow;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.pageIndicator1 {
+    margin-bottom: 0px;
+    font-family: thechildrow;
+    text-shadow: -3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF;
+}
+
+.pageIndicator2 {
+    margin-top: 0;
+    font-family: thechildrow;
+    font-size: 72px;
+    text-shadow: -3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF;
+}
+
+.pageIndicator3 {
+    margin-top: 0;
+    font-family: thechildrow;
+    font-size: 72px;
+    text-shadow: -3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF;
+}
+
+.pageIndicator4 {
+    margin-top: 0;
+    font-family: thechildrow;
+    font-size: 72px;
+    text-shadow: -3px -3px 0 #FFF, 3px -3px 0 #FFF, -3px 3px 0 #FFF, 3px 3px 0 #FFF;
+}
+
+.empty-space1 {
+    background: url(sourceimages/stickers/fishsquad.png);
+    background-size: 50% 60%;
+    min-width: 100vw;
+    max-height: 500px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    padding-top: 500px;
+}
+
+.empty-space2 {
+    background: url(sourceimages/stickers/bearfriends.png);
+    background-size: 30% 70%;
+    min-width: 100vw;
+    max-height: 400px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    padding-top: 500px;
+    padding-bottom: 200px;
+}
+
+.empty-space3 {
+    background: url(sourceimages/stickers/bugsunite.png);
+    background-size: 30% 50%;
+    min-width: 100vw;
+    max-height: 400px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 90%;
+    padding-top: 500px;
+}
+
+.empty-space4 {
+    background: url(sourceimages/stickers/newtcrawlin.png);
+    background-size: 40% 50%;
+    min-width: 100vw;
+    max-height: 400px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 90%;
+    padding-top: 500px;
+}
+
+.empty-space5 {
+    background: url(sourceimages/stickers/froglog.png);
+    background-size: 25% 50%;
+    min-width: 100vw;
+    max-height: 400px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 90%;
+    padding-top: 500px;
+}
+
+.empty-space6 {
+    background: url(sourceimages/stickers/anthill.png);
+    background-size: 40% 100%;
+    min-width: 100vw;
+    min-height: 400px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 90%;
+}
+
+.empty-space7 {
+    background: url(sourceimages/stickers/mothleaves.png);
+    background-size: 40% 100%;
+    min-width: 100vw;
+    min-height: 400px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 90%;
+}
+.graphpaper {
+background: url(sourceimages/torngraphpaper.png);
+background-size:cover;
+min-width: 100vw;
+min-height: 700px;
+padding: 0;
+margin-top: -700px;
+z-index: -1;
+}
+
+footer {
+    min-height: 50px;
+    min-width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 80% 20%;
+    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 6;
+}
+
+.owenMain {
+    cursor: pointer;
+ max-height: 190px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    margin-left: 20px;
+      position: fixed;
+      bottom: 0;
+      z-index: 7;
+}
+.owenMain {
+    cursor: pointer;
+ max-height: 190px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+    margin-left: 20px;
+      position: fixed;
+      bottom: 0;
+}
+
+#message {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 40px;
+    font-family: thechildrow, sans-serif;
+    color: #FFF;
+    text-align: center;
+    margin-left: 200px;
+    padding: 0;
+    
+}
+
+#mammalsmessage {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 36px;
+    font-family: thechildrow, sans-serif;
+    color: #FFF;
+    text-align: center;
+    margin-left: 200px;
+    padding: 0;
+    
+}
+
+#toggleButton {
+    background-color: black;
+    border: none;
+}
+.toggleIcon{
+    cursor: pointer;
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border: none;
+    background:none;
+    width: 50px;
+    height: 50px;
+    margin-left: 200px;
+
+}
+
+
+.weirdfooter {
+    margin-top: 280px;
+}
+
+.weirderfooter {
+    margin-top: 550px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .videoPlayer {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        min-width: 100vw;
+        min-height: 600px;
+    }
+    
+    .card-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 12% 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+        column-gap: 10px;
+    }
+    
+    .card {
+        background:url(sourceimages/indexcardTexture.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 600px;
+        margin-left: 80px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        rotate: -1deg;
+        z-index: -1;
+    }
+    
+    .card-2 {
+        grid-column: 2/3;
+        background:url(sourceimages/indexcardTexture.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 300px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        rotate: 1deg;
+        z-index: -1;
+    }
+
+    .card-3 {
+        background:url(sourceimages/indexcardTexture.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 600px;
+        margin-left: 160px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        rotate: 0deg;
+        z-index: -1;
+    }
+    
+    .card-title {
+        margin-left: 30px;
+        margin-top: 25px;
+        font-size: 36px;
+        font-family: thechildrow;
+    }
+    
+    
+    
+    .polaroidimage {
+        max-width: 400px;
+        rotate: 5deg;
+        z-index: -1;
+        padding-left: 150px;
+        padding-top: 10px;
+    }
+    
+    .polaroidimage2 {
+        max-width: 405px;
+        rotate: -5deg;
+        z-index: -1;
+        margin-top: -900px;
+        padding-left: 200px;
+        padding-bottom: 70px;
+        
+    }
+
+       
+    .polaroidimage3 {
+        max-width: 405px;
+        z-index: -1;
+        margin-top: -900px;
+        padding-left: 200px;
+        padding-bottom: 70px;
+        
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .second-background-1, .second-background-2 , .second-background-3 , .second-background-4 , .second-background-5 , .second-background-6 {
+        width: 101vw;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 20% 55% 25%;
+        grid-template-rows: 100%;
+        background-image: url("https://transparenttextures.com/patterns/shley-tree-2.png");
+    box-shadow: -10px 1px 10px #000;
+    }
+    
+    .directory {
+    position: absolute;
+    display: flex;
+    align-content: space-evenly;
+    margin-right: 0px;
+    margin-top: 30px;
+    padding: 10px;
+    z-index: 2;
+    max-width: 100vw;
+}
+
+.directory a {
+    margin-right: 20px;
+    min-width: 150px;
+    max-height: 50px;
+    margin-top: -30px;
+    text-align: center;
+    align-content: center;
+}
+    
+.card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+}
+
+.card-container2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+}
+
+.card {
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 600px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: -1deg;
+    z-index: -1;
+}
+
+.card-2 {
+    grid-column: 2/3;
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 600px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: 1deg;
+    z-index: -1;
+}
+
+.card-title {
+    margin-left: 30px;
+    margin-top: 25px;
+    font-size: 48px;
+    font-family: thechildrow;
+}
+
+
+
+.polaroidimage {
+    max-width: 400px;
+    rotate: 5deg;
+    z-index: -1;
+    padding-left: 150px;
+    padding-top: 10px;
+}
+
+.polaroidimage2 {
+    max-width: 405px;
+    rotate: -5deg;
+    z-index: -1;
+    margin-top: -1200px;
+    padding-left: 200px;
+    padding-bottom: 70px;
+    
+}
+
+.polaroidimage3 {
+    max-width: 405px;
+    z-index: -1;
+    margin-top: -1200px;
+    padding-left: 200px;
+    padding-bottom: 70px;
+    
+}
+
+.pageIndicator1{
+    z-index: 6;
+    margin-top: 8%;
+    padding-bottom: 50px;
+    font-family: thechildrow;
+}
+
+.pageIndicator2{
+    margin-top: 10%;
+    padding-bottom: 75px;
+    font-family: thechildrow;
+}
+
+.pageIndicator3{
+    margin-top: 15%;
+    padding-bottom: 75px;
+    font-family: thechildrow;
+}
+
+.pageIndicator4{
+    margin-top: 13%;
+    padding-bottom: 75px;
+    font-family: thechildrow;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+
+    .directory {
+        position: absolute;
+        display: flex;
+        align-content: space-between;
+        margin-right: 20px;
+        margin-top: 30px;
+        padding: 10px;
+        z-index: 2;
+        max-width: 100vw;
+    }
+    
+    .directory a {
+
+        min-width: 170px;
+        margin-top: -30px;
+        text-align: center;
+        align-content: center;
+        font-size: 32px;
+    }
+
+    .helpbutton1 {
+        padding: 30px;
+        margin-right: 30px;
+    }
+
+    .card {
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 750px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: -1deg;
+    z-index: -1;
+}
+
+
+.cardback img{
+    min-height: 500px;
+    min-width: 750px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: -1deg;
+    z-index: -2;
+}
+
+
+.card-2 {
+    grid-column: 2/3;
+    background:url(sourceimages/indexcardTexture.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 750px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    rotate: 1deg;
+    z-index: -1;
+}
+
+.card-title {
+    margin-left: 50px;
+    margin-top: 35px;
+    font-size: 40px;
+}
+
+
+
+.polaroidimage {
+    max-width: 500px;
+    rotate: 5deg;
+    z-index: -1;
+    padding-left: 210px;
+    padding-top: 10px;
+}
+
+.polaroidimage2 {
+      max-width: 500px;
+    rotate: -5deg;
+    z-index: -1;
+    margin-top: -1000px;
+    padding-left: 150px;
+    padding-bottom: 70px;
+    
+}
+
+.polaroidimage3 {
+    max-width: 500px;
+  z-index: -1;
+  margin-top: -1000px;
+  padding-left: 150px;
+  padding-bottom: 70px;
+  
+}
+
+.pageIndicator{
+    margin-top: 55%;
+}
+
+}
+}

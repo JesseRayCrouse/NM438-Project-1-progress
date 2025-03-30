@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <title>Drawing Videos</title>
+        <link rel="icon" type="image/x-icon" href="../sourceimages/owen1.png"> 
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js" defer></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <aside>
+                <div class="videoPlayer">
+                    <video width="100%" height="100%"  controls loop>
+                    <source src="../mainvideo/bear_draw_alongmp4.mp4" type="video/mp4">
+                </div>
+                <div class="button-group">
+                    <button onclick="changePage1()">Deer</button>
+                    <button onclick="changePage2()"class="activePage">Bear</button>
+                    <button onclick="changePage3()">Bass</button>
+                </div>
+                <section class="colorContainer">
+                        <label for="color">Current Color</label>
+                        <div id="colorIndicator"></div>
+                    <section class="row1">
+                        <button class="color" id="red" value="red">Red</button>
+                        <button class="color" id="orange" value="orange">Orange</button>
+                        <button class="color" id="yellow" value="yellow">Yellow</button>
+                        <button class="color" id="lime" value="lime">Lime</button>
+                    </section>
+                    <section class="row2">
+                        <button class="color" id="green" value="green">Green</button>
+                        <button class="color" id="blue" value="blue">Blue</button>
+                        <button class="color" id="purple" value="purple">Purple</button>
+                        <button class="color" id="pink" value="pink">Pink</button>
+                    </section>
+                    <section class="row3">
+                        <button class="color" id="brown" value="brown">Brown</button>
+                        <button class="color" id="black" value="black">Black</button>
+                        <button class="color" id="gray" value="gray">Gray</button>
+                        <button class="color" id="white" value="white">White</button>
+                    </section>
+                </section>
+                <section class="sizeIdentifier">
+                    <label for="size">Size</label><span id="sizeValue">25</span>
+                </section> 
+                    <input type="range" id="size" min="1" max="50" value="25" class="slider"/>
+            
+                <button onclick="changePage4()" class="returnbutton">Return To Game Selection</button>
+            </select>
+            <section class="graphpaper">
+            </section>
+            </aside>
+
+            <section id="canvas-holder"> 
+            </section>
+        </main>
+    
+    </body>
+</html>
